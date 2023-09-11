@@ -41,7 +41,7 @@ $maxWidthMake:1920;
 /* Шаблоны */
 body {
     height          : 100%;
-    background-color: #333;
+    background-color: #575555;
     min-width       : 280px;
     font-family     : "Lexend Mega", "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -91,11 +91,7 @@ html {
 
 }
 
-.things__cards:hover .card-thing {
-    filter    : blur(5px);
-    transition: 0.30s;
 
-}
 
 @media (min-width:577px) {
     .card-thing {
@@ -114,11 +110,21 @@ html {
     background-color: rgb(114, 121, 118);
 }
 
-.things__cards:hover .card-thing:hover {
-    filter: blur(0px);
+
+@media (min-width:577px) {
+
+    .things__cards:hover .card-thing {
+        filter    : blur(5px);
+        transition: 0.30s;
+    
+    }
+
+    .things__cards:hover .card-thing:hover {
+        filter: blur(0px);
+    
+    }
 
 }
-
 @media (max-width:576px) {
     .card-thing .card-thing__body {
         transform: translateX(-100vw);
